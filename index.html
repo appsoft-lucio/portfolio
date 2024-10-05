@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Definição do charset como UTF-8 para suportar caracteres especiais -->
+    <meta charset="UTF-8" />
+    <!-- Configurações para o site ser responsivo em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título da página -->
+    <title>Lúcio Júnior</title>
+    <!-- Link para o Google Material Icons, usado nos ícones do menu -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Favicon do site -->
+    <link
+      rel="shortcut icon"
+      href="https://appsoftweb.github.io/portifolio/img/Screenshot_20230606-045241.png"
+      type="image/x-icon"
+    />
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho da página -->
+    <header>
+      <nav>
+        <!-- Ícone do menu hamburger para dispositivos móveis -->
+        <span id="hamburguer" class="material-icons" onclick="clickMenu()"
+          >menu</span
+        >
+        <!-- Lista de links do menu -->
+        <ul id="listaMenu">
+          <li class="link-menu"><a href="#">Sobre</a></li>
+          <li class="link-menu"><a href="#">Projetos</a></li>
+          <li class="link-menu"><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+      <!-- Seção de apresentação pessoal -->
+      <section class="apresentacao">
+        <!-- Imagem de perfil -->
+        <img src="img/Screenshot_20230606-045241.png" alt="Foto de perfil" />
+        <!-- Nome e descrição pessoal -->
+        <h1>Olá, eu sou Lúcio Júnior</h1>
+        <p>
+          Sou desenvolvedor Full Stack e Wordpress, universitário em Ciências da
+          Computação e professor de Informática, Matemática e Técnico em
+          Segurança do Trabalho.
+        </p>
+      </section>
+
+      <!-- Seção de projetos -->
+      <section class="projetos">
+        <h1>Esses são alguns dos meus projetos como desenvolvedor web</h1>
+        <div class="trabalhos">
+          <!-- Projeto AppSoft -->
+          <div>
+            <figure>
+              <img
+                class="img_appsoft"
+                src="img/AppSoft.jpg"
+                alt="Logo AppSoft"
+              />
+              <figcaption>
+                <a href="https://appsoftweb.github.io/appSoft/" target="_blank"
+                  >AppSoft</a
+                >
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Projeto Beto Alvenaria -->
+          <div>
+            <figure>
+              <img
+                class="img_appsoft"
+                src="img/ferramentas-de-construcao.avif"
+                alt="Projeto Beto Alvenaria&Jardinagem"
+              />
+              <figcaption>
+                <a href="https://appsoftweb.github.io/Beto/" target="_blank"
+                  >Beto Alvenaria&Jardinagem</a
+                >
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de contato -->
+      <section class="contato">
+        <h1>Vamos trabalhar juntos...</h1>
+        <!-- Link para o perfil do LinkedIn -->
+        <a
+          id="profile-link"
+          href="https://linkedin.com/in/seu-perfil"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <!-- Link para o GitHub -->
+        <a href="https://github.com/seu-usuario" target="_blank"
+          ><i class="material-icons">code</i> GitHub</a
+        >
+        <!-- Link para o Twitter -->
+        <a href="https://twitter.com/seu-usuario" target="_blank"
+          ><i class="material-icons">chat</i> Twitter</a
+        >
+      </section>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer>
+      <p>Desenvolvido por: Lúcio Júnior</p>
+    </footer>
+
+    <!-- Script para controle do menu no mobile -->
+    <script src="script.js"></script>
+  </body>
+</html>
