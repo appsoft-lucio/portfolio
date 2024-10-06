@@ -8,7 +8,7 @@
       name="description"
       content="Portfólio de Lúcio Cecílio, desenvolvedor Full Stack e WordPress."
     />
-    <title>Lúcio Júnior - Desenvolvedor Full Stack e WordPress</title>
+    <title>Lúcio Cecílio - Desenvolvedor Full Stack</title>
 
     <!-- Link para os ícones da Google Material Icons -->
     <link
@@ -26,9 +26,9 @@
     <!-- Cabeçalho da página -->
     <header>
       <nav>
-        <!-- Logo ou nome da marca -->
+        <!-- Logo à esquerda como link para a seção de apresentação -->
         <div class="logo">
-          <h1>Lúcio Júnior</h1>
+          <a href="#apresentacao">Lúcio Cecílio</a>
         </div>
 
         <!-- Ícone de hambúrguer para o menu em dispositivos móveis -->
@@ -36,11 +36,11 @@
           menu
         </span>
 
-        <!-- Lista de navegação -->
+        <!-- Lista de navegação alinhada à direita -->
         <ul id="listaMenu">
-          <li class="link-menu"><a href="#">Início</a></li>
-          <li class="link-menu"><a href="#">Projetos</a></li>
-          <li class="link-menu"><a href="#">Contato</a></li>
+          <li class="link-menu"><a href="#sobre">Sobre</a></li>
+          <li class="link-menu"><a href="#projetos">Projetos</a></li>
+          <li class="link-menu"><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -48,20 +48,20 @@
     <!-- Conteúdo principal do portfólio -->
     <main>
       <!-- Seção de apresentação -->
-      <section class="apresentacao">
+      <section id="apresentacao" class="apresentacao">
         <img
           src="img/Screenshot_20230606-045241.png"
           alt="Foto de Lúcio Cecílio"
         />
-        <h1>Olá, eu sou Lúcio Júnior</h1>
+        <h1>Olá, eu sou Lúcio</h1>
         <p>
           Sou desenvolvedor Full Stack e Wordpress, universitário em Ciências da
-          Computação e professor de Informática e matemática.
+          Computação e professor de Informática.
         </p>
       </section>
 
       <!-- Seção de projetos -->
-      <section class="projetos">
+      <section id="projetos" class="projetos">
         <h1>Esses são alguns dos meus projetos como desenvolvedor web</h1>
         <div class="trabalhos">
           <div>
@@ -92,7 +92,7 @@
       </section>
 
       <!-- Seção de contato -->
-      <section class="contato">
+      <section id="contato" class="contato">
         <h1>Vamos trabalhar juntos...</h1>
         <a id="profile-link" href="#" target="_blank">LinkedIn</a>
       </section>
