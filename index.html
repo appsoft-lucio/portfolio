@@ -1,76 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <!-- Meta tags básicas para SEO e responsividade -->
     <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configura a responsividade -->
     <meta
       name="description"
       content="Portfólio de Lúcio Cecílio, desenvolvedor Full Stack e WordPress."
     />
+    <!-- Descrição do site para SEO -->
     <title>Lúcio Cecílio - Desenvolvedor Full Stack e WordPress</title>
+    <!-- Título da aba do navegador -->
 
-    <!-- Link para os ícones da Google Material Icons -->
+    <!-- Link para a fonte de ícones do Google Material Icons -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-
-    <!-- Favicon para ícone do site na aba do navegador -->
+    <!-- Ícone da aba do navegador -->
     <link rel="shortcut icon" href="img/AppSoft.jpg" type="image/x-icon" />
-
-    <!-- Link para o arquivo de estilo CSS -->
+    <!-- Link para o arquivo de estilos CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Cabeçalho da página -->
     <header>
       <nav>
-        <!-- Logo à esquerda como link para a seção de apresentação -->
         <div class="logo">
           <a href="#apresentacao">Lúcio Júnior</a>
+          <!-- Link para a seção de apresentação -->
         </div>
-
-        <!-- Ícone de hambúrguer para o menu em dispositivos móveis -->
-        <span id="hamburguer" class="material-icons" onclick="clickMenu()">
-          menu
-        </span>
-
-        <!-- Lista de navegação alinhada à direita -->
+        <span id="hamburguer" class="material-icons" onclick="clickMenu()"
+          >menu</span
+        >
+        <!-- Ícone do menu -->
         <ul id="listaMenu">
+          <!-- Lista de navegação -->
           <li class="link-menu"><a href="#sobre">Quem Sou</a></li>
+          <!-- Link para a seção 'Quem Sou' -->
           <li class="link-menu"><a href="#projetos">Projetos</a></li>
+          <!-- Link para a seção 'Projetos' -->
           <li class="link-menu"><a href="#contato">Contato</a></li>
+          <!-- Link para a seção 'Contato' -->
         </ul>
       </nav>
     </header>
 
-    <!-- Conteúdo principal do portfólio -->
     <main>
-      <!-- Seção de apresentação -->
       <section id="apresentacao" class="apresentacao">
-        <img
-          src="img/Screenshot_20230606-045241.png"
-          alt="Foto de Lúcio Cecílio"
-        />
-        <h1>Olá, eu sou Lúcio</h1>
-        <p>
-          Sou desenvolvedor Full Stack e Wordpress, universitário em Ciências da
-          Computação e professor de Informática e Matemática.
-        </p>
+        <div class="perfil-container">
+          <!-- Container para a apresentação pessoal -->
+          <img
+            src="img/Screenshot_20230606-045241.png"
+            alt="Foto de Lúcio Cecílio"
+            class="perfil-img"
+          />
+          <!-- Imagem de perfil -->
+          <div class="perfil-descricao">
+            <!-- Descrição do perfil -->
+            <h1>Olá, eu sou Lúcio Júnior</h1>
+            <!-- Título de apresentação -->
+            <p>
+              Sou desenvolvedor Full Stack e Wordpress, universitário em
+              Ciências da Computação e professor de Informática e matemática.
+            </p>
+            <!-- Descrição pessoal -->
+          </div>
+        </div>
       </section>
 
-      <!-- Seção de projetos -->
       <section id="projetos" class="projetos">
         <h1>Esses são alguns dos meus projetos como desenvolvedor web</h1>
+        <!-- Título da seção de projetos -->
         <div class="trabalhos">
+          <!-- Container para os projetos -->
           <div>
             <figure>
               <img class="img_appsoft" src="img/AppSoft.jpg" alt="AppSoft" />
+              <!-- Imagem do projeto -->
               <figcaption>
                 <a href="https://appsoftweb.github.io/appSoft/" target="_blank"
                   >AppSoft</a
                 >
+                <!-- Link para o projeto -->
               </figcaption>
             </figure>
           </div>
@@ -81,35 +93,40 @@
                 src="img/ferramenta.jpg"
                 alt="Beto Alvenaria&Jardinagem"
               />
+              <!-- Imagem do projeto -->
               <figcaption>
                 <a href="https://appsoftweb.github.io/Beto/" target="_blank"
                   >Beto Alvenaria&Jardinagem</a
                 >
+                <!-- Link para o projeto -->
               </figcaption>
             </figure>
           </div>
         </div>
       </section>
 
-      <!-- Seção de contato -->
       <section id="contato" class="contato">
         <h1>Vamos trabalhar juntos...</h1>
+        <!-- Título da seção de contato -->
         <a id="profile-link" href="#" target="_blank">LinkedIn</a>
+        <!-- Link para o LinkedIn -->
       </section>
     </main>
 
-    <!-- Rodapé da página -->
     <footer>
-      <p>Desenvolvido por: Lúcio Cecílio</p>
+      <p>Desenvolvido por: Lúcio Júnior</p>
+      <!-- Informações sobre o desenvolvedor -->
     </footer>
 
-    <!-- Botão do WhatsApp fixo no canto inferior direito -->
     <a href="https://wa.me/SEUNUMERO" id="whatsapp-button" target="_blank">
-      <img src="img/whatsapp-icon.png" alt="WhatsApp" />
-      <p>Como posso ajudar?</p>
+      <!-- Botão do WhatsApp -->
+      <img src="img/icon-zap.jpg" alt="WhatsApp" />
+      <!-- Ícone do WhatsApp -->
+      <p>Fale comigo</p>
+      <!-- Texto do botão -->
     </a>
 
-    <!-- Link para o arquivo de JavaScript -->
     <script src="script.js"></script>
+    <!-- Link para o arquivo JavaScript -->
   </body>
 </html>

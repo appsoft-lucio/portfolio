@@ -1,198 +1,204 @@
-/* Variáveis globais para cores */
 :root {
-  --header-bg-color: #0a4caa;
-  --main-bg-color: #02030e;
-  --text-color: #f0f0f0;
-  --footer-bg-color: #878e71;
+  --header-bg-color: #0a4caa; /* Cor de fundo do cabeçalho */
+  --main-bg-color: #02030e; /* Cor de fundo principal */
+  --text-color: #f0f0f0; /* Cor do texto */
+  --footer-bg-color: #878e71; /* Cor de fundo do rodapé */
 }
 
-/* Reset básico */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+  box-sizing: border-box; /* Inclui preenchimentos e bordas na largura total */
 }
 
-/* Estilos gerais do corpo */
 body {
-  font-family: Arial, sans-serif;
-  background-color: var(--main-bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
+  font-family: Arial, sans-serif; /* Define a fonte do corpo */
+  background-color: var(--main-bg-color); /* Aplica a cor de fundo principal */
+  color: var(--text-color); /* Aplica a cor do texto */
 }
 
-/* Estilo para os cabeçalhos (h1) */
-h1 {
-  font-size: 3rem;
-  text-align: center;
-}
-
-/* Estilo dos parágrafos */
-p {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-/* Estilos do cabeçalho fixo */
+/* Estilo do cabeçalho */
 header {
-  background-color: var(--header-bg-color);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 45px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  box-shadow: 0 2px gray;
-  z-index: 1000;
+  height: 60px; /* Altura do cabeçalho */
+  background-color: var(
+    --header-bg-color
+  ); /* Aplica a cor de fundo do cabeçalho */
+  display: flex; /* Usa flexbox para layout */
+  align-items: center; /* Centraliza verticalmente os itens */
+  padding: 0 20px; /* Adiciona preenchimento horizontal */
+  position: fixed; /* Mantém o cabeçalho fixo na parte superior */
+  width: 100%; /* Largura total do cabeçalho */
+  top: 0; /* Alinha o cabeçalho ao topo */
+  z-index: 1000; /* Mantém o cabeçalho acima de outros elementos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra do cabeçalho */
 }
 
-/* Logo à esquerda */
-.logo a {
-  font-size: 1.8rem;
-  color: white;
-  text-decoration: none;
-}
-
-/* Estilo para o menu de navegação alinhado à direita */
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  display: flex; /* Usar flexbox para o menu */
+  justify-content: space-between; /* Espaço entre os itens */
+  align-items: center; /* Alinhamento central vertical */
+  width: 100%; /* Largura total do nav */
 }
 
-/* Ícone de menu hambúrguer, visível apenas em dispositivos móveis */
+.logo a {
+  font-size: 1.8rem; /* Tamanho da fonte do logo */
+  color: white; /* Cor do texto do logo */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
 #hamburguer {
-  display: none; /* Oculto por padrão em telas grandes */
-  color: white;
-  cursor: pointer;
+  display: none; /* Oculta o ícone do menu em telas grandes */
+  color: white; /* Cor do ícone do menu */
+  font-size: 2rem; /* Tamanho do ícone do menu */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre o ícone */
 }
 
-/* Estilo da lista de links do menu */
-#listaMenu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: flex-end;
+nav ul {
+  list-style: none; /* Remove os marcadores da lista */
+  display: flex; /* Usar flexbox para o menu */
+  gap: 20px; /* Espaço entre os links do menu */
+  margin-left: auto; /* Alinha o menu à direita */
 }
 
-/* Estilo dos links de navegação */
-.link-menu a {
-  font-size: 1.8rem;
-  color: white;
-  text-decoration: none;
-  text-shadow: 3px 3px 2px #1f1f1f;
-  transition: all 0.3s ease;
+nav ul li a {
+  color: white; /* Cor dos links do menu */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  padding: 5px 10px; /* Preenchimento dos links */
+  transition: color 0.3s ease; /* Transição suave para a cor */
 }
 
-/* Animação de hover nos links */
-.link-menu a:hover {
-  color: gray;
-  transform: translateY(5px); /* Animação ao passar o mouse */
+nav ul li a:hover {
+  color: #ccc; /* Cor do link ao passar o mouse */
 }
 
-/* Estilos para o conteúdo principal */
-main {
-  padding-top: 60px; /* Espaçamento para o conteúdo não ficar sob o cabeçalho */
+/* Estilo da apresentação */
+.perfil-container {
+  display: flex; /* Usar flexbox para o container de perfil */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 20px; /* Espaço entre a imagem e a descrição */
+  margin-top: 80px; /* Margem superior para afastar do cabeçalho */
+  margin-bottom: 100px; /* Margem inferior para afastar do próximo conteúdo */
 }
 
-/* Estilos para a seção de apresentação */
-.apresentacao img {
-  margin-top: 30px;
-  border-radius: 50%;
-  width: 250px;
-  box-shadow: 0 0 7px #f0f0f0;
+.perfil-img {
+  width: 250px; /* Largura da imagem de perfil */
+  border-radius: 50%; /* Faz a imagem ser circular */
+  box-shadow: 0 0 7px #f0f0f0; /* Sombra da imagem */
 }
 
-/* Estilo da seção de projetos */
-.projetos {
-  text-align: center;
-  margin-bottom: 100px;
+.perfil-descricao h1 {
+  font-size: 3rem; /* Tamanho do título de apresentação */
+}
+
+.perfil-descricao p {
+  font-size: 1.5rem; /* Tamanho do texto de descrição */
+  line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+/* Estilo dos projetos */
+.trabalhos img {
+  max-width: 200px; /* Define a largura máxima das imagens */
+  width: 100%; /* Faz a imagem ocupar 100% da largura do seu contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px; /* Bordas arredondadas da imagem */
+}
+
+/* Estilo dos projetos */
+.projetos h1 {
+  text-align: center; /* Centraliza o título da seção */
+  font-size: 2.5rem; /* Tamanho do título */
+  margin-bottom: 40px; /* Margem inferior para espaço */
 }
 
 .trabalhos {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+  display: flex; /* Usar flexbox para o container de projetos */
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 40px; /* Espaço entre os projetos */
+  flex-wrap: wrap; /* Permite quebrar linhas em telas pequenas */
+  align-items: center; /* Alinha itens verticalmente ao centro */
 }
 
-.img_appsoft {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+.trabalhos div {
+  display: flex; /* Flexbox para cada projeto */
+  flex-direction: column; /* Permite que a imagem e o link fiquem em coluna */
+  align-items: center; /* Centraliza o conteúdo dentro de cada projeto */
+  text-align: center; /* Centraliza o texto do link */
 }
 
-/* Estilo para a seção de contato */
-.contato {
-  text-align: center;
-  margin-bottom: 100px;
+.trabalhos img {
+  max-width: 200px; /* Define a largura máxima das imagens */
+  width: 100%; /* Faz a imagem ocupar 100% da largura do seu contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px; /* Bordas arredondadas da imagem */
 }
 
-/* Estilos do rodapé */
+/* Estilo do contato */
+.contato h1 {
+  text-align: center; /* Centraliza o título da seção */
+  font-size: 2.5rem; /* Tamanho do título */
+  margin-bottom: 20px; /* Margem inferior para espaço */
+}
+
+#profile-link {
+  display: block; /* Mostra como bloco */
+  text-align: center; /* Centraliza o texto */
+  font-size: 1.5rem; /* Tamanho do texto */
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  margin: 20px auto; /* Margem automática para centralizar */
+}
+
+/* Estilo do rodapé */
 footer {
-  background-color: var(--footer-bg-color);
-  text-align: center;
-  padding: 15px;
+  background-color: var(
+    --footer-bg-color
+  ); /* Aplica a cor de fundo do rodapé */
+  padding: 20px; /* Adiciona preenchimento ao rodapé */
+  text-align: center; /* Centraliza o texto do rodapé */
 }
 
-footer p {
-  font-size: 1rem;
-}
-
-/* Estilos responsivos para dispositivos móveis */
-@media (max-width: 667px) {
-  /* Exibe o ícone de hambúrguer em telas pequenas */
-  #hamburguer {
-    display: block;
-    font-size: 2rem;
-  }
-
-  /* Oculta o menu por padrão em telas pequenas */
-  #listaMenu {
-    display: none;
-    flex-direction: column;
-    background-color: var(--header-bg-color);
-    position: absolute;
-    top: 45px;
-    right: 0;
-    width: 100%;
-  }
-
-  /* Estilo para os links do menu em dispositivos móveis */
-  .link-menu {
-    text-align: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #fff;
-  }
-
-  /* Exibe o menu ao ativar a classe 'menu-ativo' */
-  .menu-ativo {
-    display: flex !important;
-  }
-}
-
-/* Estilo para o botão do WhatsApp fixo */
+/* Estilo do botão do WhatsApp */
 #whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  z-index: 1000; /* Certifique-se de que o botão fique acima de outros elementos */
+  position: fixed; /* Fixa o botão na tela */
+  bottom: 20px; /* Distância do fundo */
+  right: 20px; /* Distância da direita */
+  background-color: #25d366; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remove borda do botão */
+  border-radius: 50%; /* Botão redondo */
+  padding: 10px; /* Preenchimento do botão */
+  display: flex; /* Usa flexbox para o botão */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+  text-decoration: none; /* Remove sublinhado do texto */
 }
 
 #whatsapp-button img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+  width: 30px; /* Largura do ícone do WhatsApp */
+  margin-right: 5px; /* Espaçamento à direita do ícone */
 }
 
-#whatsapp-button img:hover {
-  transform: scale(1.1); /* Animação ao passar o mouse */
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Estilos para telas pequenas */
+  nav ul {
+    display: none; /* Oculta o menu de navegação */
+    flex-direction: column; /* Alinha itens em coluna */
+    position: absolute; /* Posição absoluta para o menu */
+    top: 60px; /* Distância do topo (abaixo do cabeçalho) */
+    right: 0; /* Alinha o menu à direita */
+    background-color: var(--header-bg-color); /* Cor de fundo do menu */
+    width: 100%; /* Largura total do menu */
+  }
+
+  nav ul.menu-ativo {
+    /* Quando a classe menu-ativo é aplicada */
+    display: flex; /* Mostra o menu */
+  }
+
+  #hamburguer {
+    display: block; /* Mostra o ícone do menu em telas pequenas */
+  }
 }
