@@ -40,17 +40,26 @@ header {
   top: 0;
   width: 100%;
   height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
   box-shadow: 0 2px gray;
   z-index: 1000;
+}
+
+/* Logo ou nome da marca no cabeçalho */
+.logo h1 {
+  font-size: 1.8rem;
+  color: white;
 }
 
 /* Estilo para o menu de navegação */
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  height: 100%;
-  padding-right: 20px;
+  width: 100%;
 }
 
 /* Ícone de menu hambúrguer, visível apenas em dispositivos móveis */
@@ -62,7 +71,7 @@ nav {
 
 /* Estilo da lista de links do menu */
 #listaMenu {
-  list-style: none; /* Remove marcadores da lista */
+  list-style: none;
   display: flex;
   gap: 20px;
 }
@@ -136,25 +145,24 @@ footer p {
   #hamburguer {
     display: block;
     font-size: 2rem;
-    padding-top: 10px;
   }
 
-  /* Oculta o menu por padrão */
+  /* Oculta o menu por padrão em telas pequenas */
   #listaMenu {
     display: none;
     flex-direction: column;
+    background-color: var(--header-bg-color);
     position: absolute;
     top: 45px;
     right: 0;
-    background-color: var(--header-bg-color);
     width: 100%;
-    padding: 10px 0;
   }
 
   /* Estilo para os links do menu em dispositivos móveis */
   .link-menu {
     text-align: center;
     padding: 10px 0;
+    border-bottom: 1px solid #fff;
   }
 
   /* Exibe o menu ao ativar a classe 'menu-ativo' */
