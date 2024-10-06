@@ -1,4 +1,4 @@
-/* Variáveis de cores globais */
+/* Variáveis globais para cores */
 :root {
   --header-bg-color: #0a4caa;
   --main-bg-color: #02030e;
@@ -11,52 +11,51 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--text-color);
 }
 
-/* Estilos gerais */
+/* Estilos gerais do corpo */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   background-color: var(--main-bg-color);
   color: var(--text-color);
+  line-height: 1.6;
 }
 
-/* Estilo dos cabeçalhos */
+/* Estilo para os cabeçalhos (h1) */
 h1 {
   font-size: 3rem;
   text-align: center;
 }
 
+/* Estilo dos parágrafos */
 p {
   font-size: 1.5rem;
   text-align: center;
 }
 
-/* Estilo do cabeçalho */
+/* Estilos do cabeçalho fixo */
 header {
   background-color: var(--header-bg-color);
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   height: 45px;
   box-shadow: 0 2px gray;
   z-index: 1000;
 }
 
-/* Estilo da navegação */
+/* Estilo para o menu de navegação */
 nav {
   display: flex;
-  justify-content: flex-end; /* Alinha os links do menu à direita */
-  align-items: center; /* Centraliza verticalmente os itens */
+  justify-content: flex-end;
+  align-items: center;
   height: 100%;
   padding-right: 20px;
 }
 
-/* Ícone de menu hambúrguer (para dispositivos móveis) */
+/* Ícone de menu hambúrguer, visível apenas em dispositivos móveis */
 #hamburguer {
-  display: none; /* Oculto em telas grandes */
+  display: none; /* Oculto por padrão em telas grandes */
   color: white;
   cursor: pointer;
 }
@@ -64,45 +63,36 @@ nav {
 /* Estilo da lista de links do menu */
 #listaMenu {
   list-style: none; /* Remove marcadores da lista */
-  display: flex; /* Exibe os links em linha */
-  gap: 20px; /* Espaçamento entre os itens do menu */
+  display: flex;
+  gap: 20px;
 }
 
+/* Estilo dos links de navegação */
 .link-menu a {
   font-size: 1.8rem;
   color: white;
   text-decoration: none;
   text-shadow: 3px 3px 2px #1f1f1f;
-  padding: 5px;
   transition: all 0.3s ease;
 }
 
+/* Animação de hover nos links */
 .link-menu a:hover {
   color: gray;
-  transform: translateY(5px); /* Animação suave ao passar o mouse */
+  transform: translateY(5px); /* Animação ao passar o mouse */
 }
 
-/* Estilo para o conteúdo principal */
+/* Estilos para o conteúdo principal */
 main {
-  padding-top: 60px; /* Para evitar que o conteúdo principal fique sob o cabeçalho fixo */
+  padding-top: 60px; /* Espaçamento para o conteúdo não ficar sob o cabeçalho */
 }
 
-/* Estilo da seção de apresentação */
-.apresentacao {
-  text-align: center;
-  margin-bottom: 100px;
-}
-
+/* Estilos para a seção de apresentação */
 .apresentacao img {
   margin-top: 30px;
   border-radius: 50%;
   width: 250px;
   box-shadow: 0 0 7px #f0f0f0;
-}
-
-.apresentacao p {
-  width: 50%;
-  margin: auto;
 }
 
 /* Estilo da seção de projetos */
@@ -111,34 +101,25 @@ main {
   margin-bottom: 100px;
 }
 
-.projetos h1 {
-  width: 80%;
-  margin: auto;
-}
-
 .trabalhos {
   display: flex;
   justify-content: center;
-  gap: 40px; /* Espaçamento entre os projetos */
+  gap: 40px;
 }
 
-.trabalhos div {
-  text-align: center;
-}
-
-.trabalhos img {
+.img_appsoft {
   width: 150px;
   height: 150px;
-  object-fit: cover; /* Garante que a imagem se ajuste ao tamanho */
+  object-fit: cover;
 }
 
-/* Estilo da seção de contato */
+/* Estilo para a seção de contato */
 .contato {
   text-align: center;
   margin-bottom: 100px;
 }
 
-/* Estilo do rodapé */
+/* Estilos do rodapé */
 footer {
   background-color: var(--footer-bg-color);
   text-align: center;
@@ -149,18 +130,19 @@ footer p {
   font-size: 1rem;
 }
 
-/* Estilo para telas menores (dispositivos móveis) */
+/* Estilos responsivos para dispositivos móveis */
 @media (max-width: 667px) {
-  /* Exibe o ícone de menu hambúrguer e oculta os links do menu por padrão */
+  /* Exibe o ícone de hambúrguer em telas pequenas */
   #hamburguer {
     display: block;
     font-size: 2rem;
     padding-top: 10px;
   }
 
+  /* Oculta o menu por padrão */
   #listaMenu {
-    display: none; /* Oculta o menu por padrão em dispositivos móveis */
-    flex-direction: column; /* Empilha os itens do menu verticalmente */
+    display: none;
+    flex-direction: column;
     position: absolute;
     top: 45px;
     right: 0;
@@ -169,12 +151,13 @@ footer p {
     padding: 10px 0;
   }
 
+  /* Estilo para os links do menu em dispositivos móveis */
   .link-menu {
     text-align: center;
     padding: 10px 0;
   }
 
-  /* Exibe o menu quando a classe 'menu-ativo' é aplicada */
+  /* Exibe o menu ao ativar a classe 'menu-ativo' */
   .menu-ativo {
     display: flex !important;
   }
