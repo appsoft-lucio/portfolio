@@ -5,27 +5,29 @@
   --footer-bg-color: #878e71; /* Cor de fundo do rodapé */
 }
 
+/* Reset de estilos padrão */
 * {
   margin: 0; /* Remove margens padrão */
   padding: 0; /* Remove preenchimento padrão */
   box-sizing: border-box; /* Inclui preenchimentos e bordas na largura total */
 }
 
+/* Estilo do corpo */
 body {
   font-family: Arial, sans-serif; /* Define a fonte do corpo */
   background-color: var(--main-bg-color); /* Aplica a cor de fundo principal */
   color: var(--text-color); /* Aplica a cor do texto */
+  display: flex; /* Usa flexbox para o corpo */
+  flex-direction: column; /* Alinha os itens em coluna */
+  min-height: 100vh; /* Garante que o corpo tenha no mínimo a altura da tela */
 }
-
 /* Estilo do cabeçalho */
 header {
   height: 60px; /* Altura do cabeçalho */
-  background-color: var(
-    --header-bg-color
-  ); /* Aplica a cor de fundo do cabeçalho */
+  background-color: var(--header-bg-color); /* Cor de fundo do cabeçalho */
   display: flex; /* Usa flexbox para layout */
   align-items: center; /* Centraliza verticalmente os itens */
-  padding: 0 20px; /* Adiciona preenchimento horizontal */
+  padding: 0 20px; /* Preenchimento horizontal */
   position: fixed; /* Mantém o cabeçalho fixo na parte superior */
   width: 100%; /* Largura total do cabeçalho */
   top: 0; /* Alinha o cabeçalho ao topo */
@@ -33,6 +35,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra do cabeçalho */
 }
 
+/* Estilo do menu de navegação */
 nav {
   display: flex; /* Usar flexbox para o menu */
   justify-content: space-between; /* Espaço entre os itens */
@@ -53,6 +56,7 @@ nav {
   cursor: pointer; /* Cursor de ponteiro ao passar sobre o ícone */
 }
 
+/* Estilo da lista do menu */
 nav ul {
   list-style: none; /* Remove os marcadores da lista */
   display: flex; /* Usar flexbox para o menu */
@@ -71,14 +75,14 @@ nav ul li a:hover {
   color: #ccc; /* Cor do link ao passar o mouse */
 }
 
-/* Estilo da apresentação */
+/* Estilo da seção de apresentação */
 .perfil-container {
   display: flex; /* Usar flexbox para o container de perfil */
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
   gap: 20px; /* Espaço entre a imagem e a descrição */
   margin-top: 80px; /* Margem superior para afastar do cabeçalho */
-  margin-bottom: 100px; /* Margem inferior para afastar do próximo conteúdo */
+  margin-bottom: 0; /* Remove a margem inferior que pode empurrar o rodapé */
 }
 
 .perfil-img {
@@ -96,15 +100,7 @@ nav ul li a:hover {
   line-height: 1.5; /* Espaçamento entre linhas */
 }
 
-/* Estilo dos projetos */
-.trabalhos img {
-  max-width: 200px; /* Define a largura máxima das imagens */
-  width: 100%; /* Faz a imagem ocupar 100% da largura do seu contêiner */
-  height: auto; /* Mantém a proporção da imagem */
-  border-radius: 10px; /* Bordas arredondadas da imagem */
-}
-
-/* Estilo dos projetos */
+/* Estilo da seção de projetos */
 .projetos h1 {
   text-align: center; /* Centraliza o título da seção */
   font-size: 2.5rem; /* Tamanho do título */
@@ -133,7 +129,7 @@ nav ul li a:hover {
   border-radius: 10px; /* Bordas arredondadas da imagem */
 }
 
-/* Estilo do contato */
+/* Estilo da seção de contato */
 .contato h1 {
   text-align: center; /* Centraliza o título da seção */
   font-size: 2.5rem; /* Tamanho do título */
@@ -149,6 +145,11 @@ nav ul li a:hover {
   margin: 20px auto; /* Margem automática para centralizar */
 }
 
+#profile-link img {
+  width: 30px; /* Define a largura da imagem */
+  border-radius: 50%; /* Faz a imagem circular (100% para uma borda arredondada completa) */
+}
+
 /* Estilo do rodapé */
 footer {
   background-color: var(
@@ -156,6 +157,7 @@ footer {
   ); /* Aplica a cor de fundo do rodapé */
   padding: 20px; /* Adiciona preenchimento ao rodapé */
   text-align: center; /* Centraliza o texto do rodapé */
+  margin-top: auto; /* Empurra o rodapé para o fundo */
 }
 
 /* Estilo do botão do WhatsApp */
@@ -200,5 +202,16 @@ footer {
 
   #hamburguer {
     display: block; /* Mostra o ícone do menu em telas pequenas */
+  }
+
+  .perfil-container {
+    flex-direction: column; /* Altera a direção para coluna em telas pequenas */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-bottom: 40px; /* Ajusta a margem inferior */
+  }
+
+  .perfil-img {
+    width: 80%; /* Ajusta a largura da imagem em telas pequenas */
+    max-width: 250px; /* Define uma largura máxima */
   }
 }
