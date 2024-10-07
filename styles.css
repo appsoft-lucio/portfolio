@@ -157,8 +157,8 @@ footer {
   position: fixed; /* Fixa o botão na tela */
   bottom: 20px; /* Distância do fundo */
   right: 20px; /* Distância da direita */
-  background-color: #25d366; /* Cor de fundo do botão */
-  color: white; /* Cor do texto do botão */
+  background-color: white; /* Cor de fundo do botão */
+  color: #25d366; /* Cor do texto do botão */
   padding: 10px 15px; /* Espaçamento interno do botão */
   border-radius: 5px; /* Bordas arredondadas */
   text-decoration: none; /* Remove o sublinhado */
