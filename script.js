@@ -1,14 +1,22 @@
-// Função para alternar a classe do menu
-function clickMenu() {
-  // Seleciona a lista de menu pelo seu ID
-  const menu = document.getElementById("listaMenu");
+// Seleciona o ícone do menu (hamburguer) e a lista de itens do menu
+const hamburguerIcon = document.getElementById("hamburguer"); // Seleciona o ícone de menu
+const menuLista = document.getElementById("listaMenu"); // Seleciona a lista do menu
 
-  // Verifica se a lista de menu já tem a classe "menu-ativo"
-  if (menu.classList.contains("menu-ativo")) {
-    // Se sim, remove a classe para ocultar o menu
-    menu.classList.remove("menu-ativo");
-  } else {
-    // Caso contrário, adiciona a classe para mostrar o menu
-    menu.classList.add("menu-ativo");
-  }
+// Adiciona um evento de clique ao ícone de hambúrguer
+hamburguerIcon.addEventListener("click", clickMenu); // Chama a função clickMenu quando o ícone é clicado
+
+// Função que alterna a visibilidade do menu ao clicar no ícone
+function clickMenu() {
+  menuLista.classList.toggle("show"); // Adiciona ou remove a classe 'show' na lista do menu
 }
+
+// Adiciona um evento de clique na janela para fechar o menu se clicar fora dele
+window.addEventListener("click", function (event) {
+  // Verifica se o clique não foi no ícone do hambúrguer ou na lista do menu
+  if (
+    !hamburguerIcon.contains(event.target) && // Verifica se o clique não foi no ícone
+    !menuLista.contains(event.target) // Verifica se o clique não foi na lista do menu
+  ) {
+    menuLista.classList.remove("show"); // Remove a classe 'show' se clicar fora do menu
+  }
+});

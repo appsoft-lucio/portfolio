@@ -1,144 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <!-- Definição da linguagem do documento como português do Brasil -->
   <head>
+    <!-- Meta tag para definir a codificação de caracteres -->
     <meta charset="UTF-8" />
-    <!-- Define a codificação de caracteres -->
+    <!-- Meta tag para ajustar a página para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Configura a responsividade -->
+    <!-- Meta tag para melhorar o SEO com descrição da página -->
     <meta
       name="description"
-      content="Portfólio de Lúcio Cecílio, desenvolvedor Full Stack e WordPress."
+      content="Portfólio de Lúcio Cecílio, desenvolvedor Full Stack e especialista em WordPress. Confira meus projetos e entre em contato."
     />
-    <!-- Descrição do site para SEO -->
-    <title>Lúcio Cecílio - Desenvolvedor Full Stack e WordPress</title>
-    <!-- Título da aba do navegador -->
+    <!-- Meta tag para adicionar palavras-chave relacionadas ao conteúdo -->
+    <meta
+      name="keywords"
+      content="desenvolvedor, full stack, wordpress, portfólio, projetos web"
+    />
+    <!-- Meta tag para definir o autor da página -->
+    <meta name="author" content="Lúcio Cecílio" />
 
-    <!-- Link para a fonte de ícones do Google Material Icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!-- Ícone da aba do navegador -->
+    <!-- Título da página para SEO -->
+    <title>
+      Lúcio Cecílio - Desenvolvedor Full Stack e Especialista em WordPress
+    </title>
+
+    <!-- Favicon da página -->
     <link
       rel="shortcut icon"
       href="https://avatars.githubusercontent.com/u/183949130?v=4"
       type="image/x-icon"
     />
+
+    <!-- Link para a fonte de ícones Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <!-- Link para o arquivo de estilos CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <!-- Cabeçalho fixo com menu de navegação -->
     <header>
       <nav>
+        <!-- Logo que aponta para a seção de apresentação -->
         <div class="logo">
           <a href="#apresentacao">Lúcio Júnior</a>
-          <!-- Link para a seção de apresentação -->
         </div>
-        <span id="hamburguer" class="material-icons" onclick="clickMenu()"
-          >menu</span
-        >
-        <!-- Ícone do menu -->
+        <!-- Ícone de menu que aparece em telas menores -->
+        <span id="hamburguer" class="material-icons" onclick="clickMenu()">
+          menu
+        </span>
+        <!-- Lista de links de navegação -->
         <ul id="listaMenu">
-          <!-- Lista de navegação -->
           <li class="link-menu"><a href="#apresentacao">Quem Sou</a></li>
-          <!-- Link para a seção 'Quem Sou' -->
           <li class="link-menu"><a href="#projetos">Projetos</a></li>
-          <!-- Link para a seção 'Projetos' -->
           <li class="link-menu"><a href="#contato">Contato</a></li>
-          <!-- Link para a seção 'Contato' -->
         </ul>
       </nav>
     </header>
 
+    <!-- Seção de apresentação com informações sobre o desenvolvedor -->
     <main>
       <section id="apresentacao" class="apresentacao">
+        <!-- Container da foto de perfil e descrição -->
         <div class="perfil-container">
-          <!-- Container para a apresentação pessoal -->
+          <!-- Imagem de perfil com descrição alt -->
           <img
             src="img/Screenshot_20230606-045241.png"
             alt="Foto de Lúcio Cecílio"
             class="perfil-img"
           />
-          <!-- Imagem de perfil -->
+          <!-- Texto de apresentação -->
           <div class="perfil-descricao">
-            <!-- Descrição do perfil -->
             <h1>Olá, eu sou Lúcio Júnior</h1>
-            <!-- Título de apresentação -->
             <p>
-              Sou desenvolvedor Full Stack e Wordpress, universitário em
-              Ciências da Computação e professor de Informática e matemática.
+              Sou estudante de Ciência da Computação e possuo um curso de
+              desenvolvedor fullstack, com domínio em tecnologias como HTML5,
+              CSS3, ECMAScript, PHP, Node.js, MongoDB, React, Bootstrap, Vite,
+              WordPress e SEO. Além disso, atuo como professor de Informática e
+              Matemática, compartilhando meu conhecimento e experiência com os
+              alunos. Minha formação e prática acadêmica me permitem desenvolver
+              soluções completas e eficientes, sempre focando em aplicar as
+              melhores práticas no desenvolvimento web e em SEO para melhorar a
+              performance e usabilidade dos projetos.
             </p>
-            <!-- Descrição pessoal -->
           </div>
         </div>
       </section>
 
+      <!-- Seção que exibe os projetos recentes -->
       <section id="projetos" class="projetos">
-        <h1>Esses são alguns dos meus projetos como desenvolvedor web</h1>
-        <!-- Título da seção de projetos -->
+        <h2>Esses são alguns dos meus projetos como desenvolvedor web</h2>
+        <!-- Container para exibir os projetos -->
         <div class="trabalhos">
-          <!-- Container para os projetos -->
           <div>
-            <figure>
-              <img class="img_appsoft" src="img/AppSoft.jpg" alt="AppSoft" />
-              <!-- Imagem do projeto -->
-              <figcaption>
-                <a href="https://appsoftweb.github.io/appSoft/" target="_blank"
-                  >AppSoft</a
-                >
-                <!-- Link para o projeto -->
-              </figcaption>
-            </figure>
-          </div>
-          <div>
+            <!-- Projeto AppSoft com link para visualização -->
             <figure>
               <img
                 class="img_appsoft"
-                src="img/ferramenta.jpg"
+                src="img/AppSoft (1) (1).png"
+                alt="Projeto AppSoft"
+              />
+              <figcaption>
+                <a href="img/AppSoft (1) (1).png" target="_blank"> AppSoft </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div>
+            <!-- Projeto Beto Alvenaria&Jardinagem com link para visualização -->
+            <figure>
+              <img
+                class="img_appsoft"
+                src="img/AppSoft (1) (1).png"
                 alt="Beto Alvenaria&Jardinagem"
               />
-              <!-- Imagem do projeto -->
               <figcaption>
-                <a href="https://appsoftweb.github.io/Beto/" target="_blank"
-                  >Beto Alvenaria&Jardinagem</a
-                >
-                <!-- Link para o projeto -->
+                <a href="https://appsoftweb.github.io/Beto/" target="_blank">
+                  Beto Alvenaria&Jardinagem
+                </a>
               </figcaption>
             </figure>
           </div>
         </div>
       </section>
 
+      <!-- Seção de contato com link para LinkedIn e email -->
       <section id="contato" class="contato">
-        <h1>Vamos trabalhar juntos...</h1>
-        <!-- Título da seção de contato -->
+        <h2>Entre em Contato</h2>
+        <!-- Link para o perfil no LinkedIn -->
         <a
           id="profile-link"
           href="https://www.linkedin.com/in/devlucio"
           target="_blank"
-          ><img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAbFBMVEUAe7b///8AbK8AcrLe7vYTeLWsy+EAebWFrtAAdrT2+/201+nk7fRfl8S91ee51eeEudfv9voAZ63P3+xzsdNxqs/H3uzY5/E4i76Xv9pRlsRTmsaz0ORnocpCksKfxN4cgrqOuNYxgLmNwdwyPoL6AAAEz0lEQVR4nO2d25KiMBBAE+IYkkUFlZtcRPf//3HBnd0dBTo6iWXa7fMwNQ9Q5FQnoekEZJznTDL0qDbinPGkUq9uiQtEmvQyx+ANAsOYFBlnSfEWgelD02iWibcITI/KWSle3QhXBDUr3iUwTOxf3QKHyPbVLSAIgiAIgiC+iXyXDFsqNaj8/oua3qQ7NGkc79NV0Qu9uj0WSKGqss4TrbnWSbYMC7w6Uh2OC/4FnZ0KpL1NyTjnN+isQlk6UEWtb116khPCqo4q1hMqA2Xw6rY9ijpvZlw4j7evbt2DdMtZF85TXHOaSgEXjquyK88JJMM3mKY0cQJdcK2GqAiW4Us8907RGFx43qIJzXbuFvOvn4VoRo0YpTG36BJLZFRhGjKc1x2SQaOMQ4bzHZblHfP4H2SQ9LO7ZLBMZ/dFBkk3UwWczAysschItjDKHNFUn4KdyUWf8Nw09yaZBaJMU5pkMjS9bNjzALsgSs2G+QyWyREFpreJwcAgK551GSCDJmX+RB3mM+cdtjKglM2cTdYhC8zFZvLWqWss+fIVqp2YoKMTvrgMSHlOb5+f6xWqSfkrUnXV7m8GraNly1CG5ROpRNeUP7IsK8ODEniqZTNIFQTb7TbAb0IQBEEQaJFKSvWH/j+0b431IueuOFTVfiCtqqotzhe9J1xMgUxcUT5wvFSsWIWb3dXjX7JYL9NVb+Q8bZKHFUQ7up4soOO/FqaH3LU6zpQY9GIZr5Tjx3KRRRDHUXVGltDx+3/HS1WEG2hlTi+Oaee0+iPg0vlytBfoA9qewuO/jVNdmE1tlroiWacuH5yeJCODZm1eLhl06sJdX3uOjFTlXSoD+d7ZxPYUGaWgyuItOnYVm2fIiM68hnXF+sONzRNkBFAjnaF209Pcy1zeDn+UpZMp2rmMao1Li9MneigTFPNbPiG0i8UT55Epv+XSz9AO9ui4lll9Y8D8Zpw5vVrmp2GNFCCyX9d2LBMZ0zHgWtb9zLGMDfZbDjySsR81PslYb23zSSax3a3vkww/WpZtvJLJLHcdeiWTNG8kw0u7fuaXTH1+I5ncbnJ+qkwWp82hOjRNaq46XdArP2X0phFb8Vm1FdtgtG1iksbLbrbrguuaiwiOd0Qn9lAmqdm4fCQacy1tc/ZOJomnPg8n77DZWU1nT5EpZ1r0cTL1tNxqf/szZGZfuZGd6U2qaLyG8lqZ6DA7v4rZXYef6MozmblOxu4JjVV25l4mnw8MY8o0akK/ZGooWVSt4d4ZetXNkhBcd5WGxY6TV5EBexmTypAHHL2SWcOPJCKEb5xWe9ydy9Rwa0xZgFeRMb0JZVq9+WFTO3Mtk6RwaySDpzOvZCLDs6JU8FqUVzLGTNHwzh4umS0imZ1pAQyTTGaSCeAUwCsZMDO7yMB5s1cyG5IhGZIhGZIhGZIhGZIhGZIhGZIhGZIhGZIhGZIhGZIhGZIhGZIhGZIhGZIhGZIhGZIhGZIhGZL5H2VqXDK5hpiUAU8wXTBYQ6fbycgmhBi/BCpX4AmV6YIKvOCp+bCQYUpATOy4fvgEx+cTBEEQBEEQBPHf0KH91PsY2TKrb2x4hdizEtevyAEENcuw/fTaHJJFTKP8vbIJRMoZ32zfIzRq18skzVuMGpFq/gvzDXcshxztDAAAAABJRU5ErkJggg=="
-            alt=""
-          />LinkedIn</a
         >
-        <!-- Link para o LinkedIn -->
+          <img
+            src="#"
+            alt="LinkedIn"
+            aria-label="Link para meu perfil no LinkedIn"
+          />
+          LinkedIn
+        </a>
+        <!-- Link para enviar email -->
+        <a id="contact-email" href="mailto:luciocdesouza@gmail.com"
+          >Envie um Email</a
+        >
       </section>
     </main>
 
+    <!-- Rodapé com créditos do desenvolvedor -->
     <footer>
-      <p>Desenvolvido por: Lúcio Júnior</p>
-      <!-- Informações sobre o desenvolvedor -->
+      <p>&copy; 2024 Lúcio Júnior. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Botão flutuante para WhatsApp -->
     <a href="https://wa.me/SEUNUMERO" id="whatsapp-button" target="_blank">
-      <!-- Botão do WhatsApp -->
       <img src="img/icon-zap.jpg" alt="WhatsApp" />
-      <!-- Ícone do WhatsApp -->
       <p>Fale comigo</p>
-      <!-- Texto do botão -->
     </a>
 
-    <script src="script.js"></script>
-    <!-- Link para o arquivo JavaScript -->
+    <!-- Inclusão do arquivo de script -->
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
