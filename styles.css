@@ -198,3 +198,36 @@ footer {
     display: flex; /* Exibe a lista quando ativada */
   }
 }
+
+#servicos {
+  background-color: #fef9e1;
+  width: 100%;
+  margin-top: -40px;
+  padding: 80px 0 80px 0;
+}
+#servicos h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+#servicos div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Espaçamento entre as colunas e sections */
+  max-width: 500px; /* Largura máxima da área de conteúdo */
+  margin: 0 auto; /* Centraliza a div container */
+  justify-content: center;
+}
+.tipo-de-site {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  text-align: left; /* Centraliza o conteúdo dentro da section */
+  background-color: white;
+  width: 250px;
+  padding: 50px;
+}
+p {
+  font-size: 22px;
+}
