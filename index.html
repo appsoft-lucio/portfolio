@@ -1,59 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <!-- Definição da linguagem do documento como português do Brasil -->
   <head>
-    <!-- Meta tag para definir a codificação de caracteres -->
     <meta charset="UTF-8" />
-    <!-- Meta tag para ajustar a página para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Meta tag para melhorar o SEO com descrição da página -->
     <meta
       name="description"
-      content="Portfólio de Lúcio Cecílio, desenvolvedor Full Stack e especialista em WordPress. Confira meus projetos e entre em contato."
+      content="Portfólio de Lúcio Cecílio, desenvolvedor Full Stack especializado em WordPress, SEO e soluções web. Confira projetos inovadores e entre em contato."
     />
-    <!-- Meta tag para adicionar palavras-chave relacionadas ao conteúdo -->
     <meta
       name="keywords"
-      content="desenvolvedor, full stack, wordpress, portfólio, projetos web"
+      content="Lúcio Cecílio, desenvolvedor web, Full Stack, WordPress, SEO, portfólio, projetos web, React, Node.js, MongoDB"
     />
-    <!-- Meta tag para definir o autor da página -->
     <meta name="author" content="Lúcio Cecílio" />
+    <meta name="robots" content="index, follow" />
 
-    <!-- Título da página para SEO -->
-    <title>
-      Lúcio Cecílio - Desenvolvedor Full Stack e Especialista em WordPress
-    </title>
+    <!-- Open Graph para redes sociais -->
+    <meta
+      property="og:title"
+      content="Lúcio Cecílio - Desenvolvedor Full Stack"
+    />
+    <meta
+      property="og:description"
+      content="Portfólio de Lúcio Cecílio, especializado em WordPress, SEO e desenvolvimento Full Stack."
+    />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/183949130?v=4"
+    />
+    <meta property="og:url" content="https://www.seusite.com" />
+    <meta property="og:type" content="website" />
 
-    <!-- Favicon da página -->
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Lúcio Cecílio - Desenvolvedor Full Stack"
+    />
+    <meta
+      name="twitter:description"
+      content="Confira meu portfólio e entre em contato para soluções web personalizadas."
+    />
+    <meta
+      name="twitter:image"
+      content="https://avatars.githubusercontent.com/u/183949130?v=4"
+    />
+
+    <title>Lúcio Cecílio - Desenvolvedor Full Stack | WordPress e SEO</title>
+
     <link
       rel="shortcut icon"
       href="https://avatars.githubusercontent.com/u/183949130?v=4"
       type="image/x-icon"
     />
-
-    <!-- Link para a fonte de ícones Material Icons -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-
-    <!-- Link para o arquivo de estilos CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <!-- Cabeçalho fixo com menu de navegação -->
     <header>
       <nav>
-        <!-- Logo que aponta para a seção de apresentação -->
         <div class="logo">
           <a href="#apresentacao">Lúcio Júnior</a>
         </div>
-        <!-- Ícone de menu que aparece em telas menores -->
         <span id="hamburguer" class="material-icons" onclick="clickMenu()">
           menu
         </span>
-        <!-- Lista de links de navegação -->
         <ul id="listaMenu">
           <li class="link-menu"><a href="#apresentacao">Quem Sou</a></li>
           <li class="link-menu"><a href="#projetos">Projetos</a></li>
@@ -62,47 +76,38 @@
       </nav>
     </header>
 
-    <!-- Seção de apresentação com informações sobre o desenvolvedor -->
     <main>
       <section id="apresentacao" class="apresentacao">
-        <!-- Container da foto de perfil e descrição -->
         <div class="perfil-container">
-          <!-- Imagem de perfil com descrição alt -->
           <img
             src="img/Screenshot_20230606-045241.png"
-            alt="Foto de Lúcio Cecílio"
+            alt="Foto de perfil de Lúcio Cecílio, desenvolvedor Full Stack"
             class="perfil-img"
           />
-          <!-- Texto de apresentação -->
           <div class="perfil-descricao">
-            <h1>Olá, eu sou Lúcio Júnior</h1>
+            <h1>Lúcio Cecílio - Desenvolvedor Full Stack</h1>
             <p>
-              Sou estudante de Ciência da Computação e possuo um curso de
-              desenvolvedor fullstack, com domínio em tecnologias como HTML5,
-              CSS3, ECMAScript, PHP, Node.js, MongoDB, React, Bootstrap, Vite,
-              WordPress e SEO. Além disso, atuo como professor de Informática e
-              Matemática, compartilhando meu conhecimento e experiência com os
-              alunos. Minha formação e prática acadêmica me permitem desenvolver
-              soluções completas e eficientes, sempre focando em aplicar as
-              melhores práticas no desenvolvimento web e em SEO para melhorar a
-              performance e usabilidade dos projetos.
+              Sou estudante de Ciência da Computação e desenvolvedor Full Stack
+              com sólida experiência acadêmica. Tenho domínio em tecnologias
+              como WordPress, React, Node.js, MongoDB, SEO e outras ferramentas
+              essenciais para criar soluções web de alto desempenho. Além disso,
+              atuo como professor de Informática e Matemática, ajudando a formar
+              novos talentos na área de tecnologia e contribuindo para projetos
+              que aliam inovação e funcionalidade.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Seção que exibe os projetos recentes -->
       <section id="projetos" class="projetos">
-        <h2>Esses são alguns dos meus projetos como desenvolvedor web</h2>
-        <!-- Container para exibir os projetos -->
+        <h2>Meus Projetos Recentes</h2>
         <div class="trabalhos">
           <div>
-            <!-- Projeto AppSoft com link para visualização -->
             <figure>
               <img
                 class="img_appsoft"
                 src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-                alt="Projeto AppSoft"
+                alt="Projeto Trombones: Landing Page de Produto"
               />
               <figcaption>
                 <a
@@ -115,19 +120,18 @@
             </figure>
           </div>
           <div>
-            <!-- Projeto Beto Alvenaria&Jardinagem com link para visualização -->
             <figure>
               <img
                 class="img_appsoft"
                 src="img/AppSoft (1) (1).png"
-                alt="Beto Alvenaria&Jardinagem"
+                alt="Cartão interativo sobre um time de futebol"
               />
               <figcaption>
                 <a
                   href="https://appsoft-lucio.github.io/cartao-time-futebol/"
                   target="_blank"
                 >
-                  Cartão time de Futebol
+                  Cartão Time de Futebol
                 </a>
               </figcaption>
             </figure>
@@ -135,41 +139,35 @@
         </div>
       </section>
 
-      <!-- Seção de contato com link para LinkedIn e email -->
       <section id="contato" class="contato">
         <h2>Entre em Contato</h2>
-        <!-- Link para o perfil no LinkedIn -->
         <a
           id="profile-link"
           href="https://www.linkedin.com/in/devlucio"
           target="_blank"
         >
           <img
-            src="#"
-            alt="LinkedIn"
+            src="img/linkedin-icon.png"
+            alt="Perfil no LinkedIn de Lúcio Cecílio"
             aria-label="Link para meu perfil no LinkedIn"
           />
           LinkedIn
         </a>
-        <!-- Link para enviar email -->
-        <a id="contact-email" href="mailto:luciocdesouza@gmail.com"
-          >Envie um Email</a
-        >
+        <a id="contact-email" href="mailto:luciocdesouza@gmail.com">
+          Envie um Email
+        </a>
       </section>
     </main>
 
-    <!-- Rodapé com créditos do desenvolvedor -->
     <footer>
       <p>&copy; 2024 Lúcio Júnior. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Botão flutuante para WhatsApp -->
     <a href="https://wa.me/5531988047534" id="whatsapp-button" target="_blank">
-      <img src="img/icon-zap.jpg" alt="WhatsApp" />
+      <img src="img/icon-zap.jpg" alt="Botão para contato via WhatsApp" />
       <p>Fale comigo</p>
     </a>
 
-    <!-- Inclusão do arquivo de script -->
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
